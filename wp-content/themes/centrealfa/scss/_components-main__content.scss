@@ -1,0 +1,41 @@
+.illu{
+    color: $txtWhite;
+    text-align: right;
+    text-shadow: 2px 2px 1px $shadowHeavyBlack,
+                -1px -1px 5px $shadowLightBlack;
+}
+
+.illu-title{
+    //background-image: url(../img/illu-holding_hands-1366x485.jpg);
+}
+
+.illu-contact{
+    //background-image: url(../img/illu-woman-1366x485.jpg);
+    .media__link{
+        color: lighten($logoColor, 10%);
+    }
+}
+
+.illu-common{
+    //background-image: url(../img/illu-tunnel-1366x200.jpg);
+    .illu-text{
+        text-align: left;
+    }
+}
+
+.content__link, .content-preview__list__link, .media__link{
+    color: $logoColor;
+    
+    &:hover{
+        color: lighten($logoColor, 10%);
+    }
+}
+
+.content__link{
+    font-weight: bold;
+}
+
+.content-preview{
+    border: 2px solid $logoColor;
+    border-radius: 5px;
+}

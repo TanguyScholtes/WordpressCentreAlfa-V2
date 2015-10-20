@@ -1,0 +1,16 @@
+.footer__wrapper{
+    background-color: $logoColor;
+    color: $txtWhite;
+}
+
+.footer__list__item{
+    background-color: $bgWhite;
+    border-radius: 5em;
+}
+
+.footer__link{
+    color: $txtWhite;
+    &:hover{
+        font-weight: bold;
+    }
+}

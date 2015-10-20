@@ -1,0 +1,68 @@
+.left-column{
+    background-color: $logoColorTransp;
+    color: $txtWhite;
+}
+
+.search__input{
+    border: 1px solid darken($logoColor, 10%);
+    border-radius: 5px;
+    padding: 0.25em 0.5em;
+}
+
+.submit__input{
+    border: 1px solid darken($logoColor, 20%);
+    border-radius: 5px;
+    padding: 0.4em 0.5em;
+    background-color: darken($logoColor, 10%);
+    color: $txtWhite;
+    transition: background-color 500ms ease;
+    transition: box-shadow 200ms ease;
+    
+    &:hover{
+        background-color: lighten($logoColor, 15%);
+        box-shadow: 2px 2px 2px $shadowLightBlack;
+        transition: background-color 500ms ease;
+        transition: box-shadow 200ms ease;
+    }
+}
+
+.side__menu__list{
+    list-style-type: none;
+}
+
+.side__menu__underlist{
+    list-style-type: circle;
+}
+
+.side__menu__list--second{
+    list-style-type: disc;
+}
+
+.side__menu__list__link, .side__menu__underlist__link, .side__menu__list__link--second{
+    text-decoration: none;
+    color: $txtWhite;
+}
+
+.side__menu__list__link{
+    text-decoration: none;
+    color: $txtWhite;
+    &:hover{
+        background-color: darken($logoColorTransp, 15%);
+    }
+}
+
+.side__menu__underlist__link{
+    &:hover{
+        background-color: darken($logoColorTransp, 25%);
+    }
+}
+
+.side__menu__list__link--second{
+    &:hover{
+        background-color: darken($logoColorTransp, 35%);
+    }
+}
+
+.open{
+    background-color: darken($logoColorTransp, 15%);
+}

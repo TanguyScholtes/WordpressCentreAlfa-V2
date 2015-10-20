@@ -1,0 +1,113 @@
+/*
+Theme Name: Centre Alfa
+Theme URI: 
+Author: Tanguy SCHOLTES
+Author URI: http://centrealfa.tanguyscholtes.be/
+Description: Un thème sur mesures pour l'ASBL Centre Alfa, spécialisée dans le traitement et la prévention de l'alcool, de la toxicomanie et des dépendances.
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain: centrealfa
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*-----------SETTINGS------------*/
+//Default values & breakpoints
+
+html{
+    font-size: 16px;
+}
+
+
+/*------------TOOLS------------*/
+//Mixins, variables & functions
+
+@import "tools-colors";
+@import "tools-fonts";
+
+
+/*------------GENERIC-----------*/
+//Basic definitions for generic elements
+
+@import "normalize";
+@import "boilerplate";
+
+
+/*------------BASE------------*/
+//Low-specificity rules for your particular project
+
+body {
+	position: relative;
+	font-family: "Oxygen", Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 0 auto;
+    margin-bottom: 1em;
+	width: 100%;
+    position: relative;
+}
+
+.wrapper:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main__wrapper{
+    padding-top: 3em;
+    position: relative;
+}
+
+.title{
+    font-size: 1.15em;
+}
+
+.hidden{
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+.anchor{
+    display: block;
+    position: relative;
+    top: -4em;
+    visibility: hidden;
+}
+
+/*------------OBJECTS------------*/
+//Structure, location and behaviour of repeating sections in your pages
+
+@import "objects-top__menu";
+@import "objects-side__menu";
+@import "objects-side__menu-wordpress";
+@import "objects-footer";
+@import "objects-main__content";
+@import "objects-media";
+
+
+/*------------COMPONENTS------------*/
+//Aspects of those repeating sections
+
+@import "components-top__menu";
+@import "components-side__menu";
+@import "components-side__menu-wordpress";
+@import "components-footer";
+@import "components-main__content";
+@import "components-media";
+
+
+/*------------TRUMPS-------------*/
+//Rules you want to win in every situation
+

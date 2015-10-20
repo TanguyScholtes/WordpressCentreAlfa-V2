@@ -1,0 +1,82 @@
+.main__page__title{
+    font-size: 1.5em;
+}
+
+.illu{
+    width: 100%;
+    height: 30em;
+    position: relative;
+}
+
+.illu-common{
+    height: 10em;
+    margin-bottom: 1em;
+    .illu__text{
+        font-size: 2em;
+        top: 30%;
+    }
+}
+
+.illu__text{
+    position: absolute;
+    width: 65%;
+    right: 4%;
+}
+
+.illu__text-title{
+    top: 65%;
+    font-size: 1.25em;
+}
+
+.illu__text-contact{
+    top: 24%;
+    font-size: 1.15em;
+}
+
+.main__content{
+    position: relative;
+    left: 24%;
+    width: 70%;
+    min-height: 12em;
+    padding: 1em;
+}
+
+.news{
+    width: 100%;
+    padding: 0;
+}
+
+.news__list{
+    padding-left: 1em;
+    margin: 0;
+}
+
+.news__list__item{
+    margin-bottom: 0.5em;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.news__list__item>p{
+    margin: 0;
+    padding: 0;
+}
+
+.content-preview{
+    display: inline-block;
+    padding: 0 1em 1em 1em;
+    font-size: 0.85em;
+}
+
+.content-preview__list{
+    padding-left: 1em;
+    margin: 0;
+}
+
+.content-preview__list__item{
+    margin-bottom: 0.5em;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

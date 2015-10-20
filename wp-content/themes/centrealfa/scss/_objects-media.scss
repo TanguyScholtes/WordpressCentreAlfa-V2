@@ -1,0 +1,43 @@
+.media{
+    margin: 2.5em 0 3em 0;
+}
+
+.media__person__name{
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.media__person__text{
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    
+    &:last-child{
+        margin-bottom: 2em;
+    }
+}
+
+.media__person{
+    //margin-left: 1em;
+    
+    &:last-child{
+        margin-bottom: 3em;
+    }
+}
+
+.media__title{
+    font-size: 1.25em;
+}
+
+.media__subtitle{
+    font-size: 1.1em;
+}
+
+.media__image__wrapper{
+    display: inline-block;
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+.media__image{
+    //float: left; 
+}

@@ -1,0 +1,18 @@
+.left-column{
+    .menu{
+        list-style-type: none;
+    }
+
+    .menu-item{
+        padding: 0;
+
+        a{
+            text-decoration: none;
+            color: $txtWhite;
+
+            &:hover{
+                background-color: darken($logoColorTransp, 15%);
+            }
+        }
+    }
+}

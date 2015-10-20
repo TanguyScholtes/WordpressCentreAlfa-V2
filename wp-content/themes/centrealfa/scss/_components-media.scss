@@ -1,0 +1,22 @@
+.media__title{
+    .media__link{
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+.media__link, .media__person__name{
+    color: $logoColor;   
+}
+
+.media__link{
+    font-weight: bold;
+}
+
+.media__person__name{
+    font-weight: bold;
+}
+
+.media__text__important{
+    color: $logoColor;
+}
