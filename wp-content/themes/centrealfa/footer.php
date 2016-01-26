@@ -20,8 +20,6 @@
                     </li>
                 </ul>
                 <p class="legal">Centre Alfa ASBL - 2015</p>
-                
-                <p class="made-by">Crédits photos : Daniel Santalla, Julia Caesar & Leeroy - <a class="footer__link" href="http://www.lifeofpix.com/">Life of Pix</a></p>
 
                 <p class="made-by">Tanguy SCHOLTES - 2015</p>
             </footer><!-- .footer -->

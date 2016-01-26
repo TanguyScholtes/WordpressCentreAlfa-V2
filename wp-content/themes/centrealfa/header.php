@@ -16,7 +16,7 @@
         
         <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
         
-        <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>?1">
     </head>
     <body>
         <!--[if lt IE 7]>

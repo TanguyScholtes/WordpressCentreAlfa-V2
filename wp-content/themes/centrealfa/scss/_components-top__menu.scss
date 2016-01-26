@@ -1,5 +1,5 @@
 .header__wrapper{
-    background-color: $txtWhite;
+    background-color: $bgYellow;
     color: $txtBlack;
     border-bottom: 2px solid $logoColor;
 }
@@ -30,7 +30,7 @@
 }
 
 .top__menu__list__item{
-    background-color: $bgWhite;
+    background-color: $bgYellow;
     transition: background-color 500ms ease-out;
     
     &:hover{

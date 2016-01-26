@@ -583,6 +583,12 @@ body {
   width: 100%;
   text-align: center; }
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -4em;
+  visibility: hidden; }
+
 /*------------OBJECTS------------*/
 .header__wrapper {
   height: 3em;
@@ -623,11 +629,11 @@ body {
   display: block;
   clear: both; }
 
-.top__menu__list__link {
+.top__menu__list a {
   font-size: 1.15em;
   display: inline-block;
   padding: 0.6em 0.75em; }
-  .top__menu__list__link:hover {
+  .top__menu__list a:hover {
     z-index: 99; }
 
 .top__menu__list__item {
@@ -652,9 +658,9 @@ body {
   position: relative;
   padding: 0.6em 0.75em; }
 
-.top__menu__underlist__link {
+.top__menu__underlist a {
   padding: 0.6em 0.75em; }
-  .top__menu__underlist__link:hover {
+  .top__menu__underlist a:hover {
     z-index: 99; }
 
 .left-column {
@@ -696,6 +702,21 @@ body {
 
 .side__menu__list__link, .side__menu__underlist__link, .side__menu__list__link--second {
   padding: 0.5em 0; }
+
+.left-column .menu {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin-top: 0;
+  font-size: 1em; }
+.left-column .menu-item {
+  padding: 0;
+  display: block;
+  position: relative; }
+  .left-column .menu-item a {
+    display: block;
+    position: relative;
+    padding: 0.5em 0; }
 
 .footer__wrapper {
   width: 100%;
@@ -774,6 +795,10 @@ body {
   .news__list__item:last-child {
     margin-bottom: 0; }
 
+.news__list__item > p {
+  margin: 0;
+  padding: 0; }
+
 .content-preview {
   display: inline-block;
   padding: 0 1em 1em 1em;
@@ -789,7 +814,7 @@ body {
     margin-bottom: 0; }
 
 .media {
-  margin: 2.5em 0; }
+  margin: 2.5em 0 3em 0; }
 
 .media__person__name {
   font-size: 1.1rem;
@@ -799,16 +824,21 @@ body {
   margin-top: 0.25em;
   margin-bottom: 0.25em; }
   .media__person__text:last-child {
-    margin-bottom: 1em; }
+    margin-bottom: 2em; }
 
-.media__person {
-  margin-left: 1em; }
+.media__person:last-child {
+  margin-bottom: 3em; }
 
 .media__title {
   font-size: 1.25em; }
 
 .media__subtitle {
   font-size: 1.1em; }
+
+.media__image__wrapper {
+  display: inline-block;
+  float: left;
+  margin: 0 1em 1em 0; }
 
 /*------------COMPONENTS------------*/
 .header__wrapper {
@@ -827,11 +857,11 @@ body {
   font-size: 0.5em;
   margin-left: 0.5em; }
 
-.top__menu__list__link {
+.top__menu__list a {
   text-decoration: none;
   color: #1b1b1b;
   transition: color 300ms ease-out; }
-  .top__menu__list__link:hover {
+  .top__menu__list a:hover {
     color: #f7f7f7;
     transition: color 300ms ease-out; }
 
@@ -852,11 +882,11 @@ body {
     background-color: #75879f;
     transition: background-color 500ms ease-out; }
 
-.top__menu__underlist__link {
+.top__menu__underlist a {
   text-decoration: none;
   color: #f7f7f7;
   transition: color 300ms ease-out; }
-  .top__menu__underlist__link:hover {
+  .top__menu__underlist a:hover {
     color: #f7f7f7;
     transition: color 300ms ease-out; }
 
@@ -911,6 +941,16 @@ body {
 .open {
   background-color: rgba(102, 122, 147, 0.8); }
 
+.left-column .menu {
+  list-style-type: none; }
+.left-column .menu-item {
+  padding: 0; }
+  .left-column .menu-item a {
+    text-decoration: none;
+    color: #f7f7f7; }
+    .left-column .menu-item a:hover {
+      background-color: rgba(102, 122, 147, 0.8); }
+
 .footer__wrapper {
   background-color: #93a1b4;
   color: #f7f7f7; }
@@ -949,7 +989,7 @@ body {
 
 .media__title .media__link {
   text-decoration: none;
-  font-weight: normal; }
+  font-weight: bold; }
 
 .media__link, .media__person__name {
   color: #93a1b4; }

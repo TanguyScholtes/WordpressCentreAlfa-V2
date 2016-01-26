@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="illu illu-common"  data-parallax="scroll" data-image-src="<?php bloginfo('template_url'); ?>/img/illu-tunnel-1366x200.jpg">
+<div class="illu illu-common"  data-parallax="scroll" data-image-src="<?php bloginfo('template_url'); ?>/img/illu-lighthouse-1366x200.jpg">
     <h1 class="title main__page__title illu__text">Nos Équipes</h1>
 </div>
 <div class="main main__content">

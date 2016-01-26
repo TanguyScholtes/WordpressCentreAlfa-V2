@@ -1,0 +1,22 @@
+.button__link{
+    background-color: $logoColor;
+	text-decoration: none;
+	color: $txtWhite;
+	font-weight: bold;
+	border-radius: 0.5em;
+    border: 2px solid $logoColor;
+    transition: color 500ms ease;
+	transition: background-color 500ms ease;
+    transition: border 500ms ease;
+    text-shadow: none;
+}
+
+.button__link:hover{
+    border: 2px solid $logoColor;
+    background-color: $txtWhite;
+    background-position: 0 -55px, 0 0;
+    color: $logoColor;
+    transition: color 500ms ease;
+	transition: background-color 500ms ease;
+    transition: border 500ms ease;
+}

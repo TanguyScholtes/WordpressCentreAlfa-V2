@@ -186,6 +186,34 @@
         );
     }
 
+	function remove_admin_menus () {
+		global $menu;
+
+		// all users
+		$restrict = explode(',', 'Links,Comments');
+		
+		// non-administrator users
+		$restrict_user = explode(',', 'Appearance,Plugins,Users,Tools,Settings,Custom Fields');
+
+		// WP localization
+		$f = create_function('$v,$i', 'return __($v);');
+		array_walk($restrict, $f);
+		if (!current_user_can('activate_plugins')) {
+			array_walk($restrict_user, $f);
+			$restrict = array_merge($restrict, $restrict_user);
+		}
+
+		// remove menus
+		end($menu);
+		while (prev($menu)) {
+			$k = key($menu);
+			$v = explode(' ', $menu[$k][0]);
+			if(in_array(is_null($v[0]) ? '' : $v[0] , $restrict)) unset($menu[$k]);
+		}
+
+	}
+	add_action('admin_menu', 'remove_admin_menus');
+
     add_action( 'init', 'create_post_types' );
     add_action( 'init', 'create_taxonomies' );
     add_action( 'init', 'register_my_menus' );

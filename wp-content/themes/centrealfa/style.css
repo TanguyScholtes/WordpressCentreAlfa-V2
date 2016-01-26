@@ -22,6 +22,10 @@ html {
 
 /*------------TOOLS------------*/
 /*--------- TOOLS : Colors ---------*/
+/*
+$logoColor: rgb(147, 161, 180);
+$logoColorTransp: rgba(147, 161, 180, 0.8);
+*/
 /*------------GENERIC-----------*/
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
@@ -927,13 +931,13 @@ body {
 }
 
 .main__page__title {
-  font-size: 1.5em;
+  font-size: 2.5em;
+  margin: 3em 0;
 }
 
 .illu {
   width: 100%;
   height: 30em;
-  position: relative;
 }
 
 .illu-common {
@@ -942,31 +946,21 @@ body {
 }
 .illu-common .illu__text {
   font-size: 2em;
-  top: 30%;
-}
-
-.illu__text {
-  position: absolute;
-  width: 65%;
-  right: 4%;
 }
 
 .illu__text-title {
-  top: 65%;
   font-size: 1.25em;
 }
 
 .illu__text-contact {
-  top: 24%;
   font-size: 1.15em;
 }
 
 .main__content {
-  position: relative;
-  left: 24%;
   width: 70%;
   min-height: 12em;
   padding: 1em;
+  margin: 0 auto;
 }
 
 .news {
@@ -1044,11 +1038,23 @@ body {
   margin: 0 1em 1em 0;
 }
 
+.button__link {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+}
+
+.button-wide .button__link {
+  display: block;
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+}
+
 /*------------COMPONENTS------------*/
 .header__wrapper {
-  background-color: #f7f7f7;
+  background-color: #ffe26c;
   color: #1b1b1b;
-  border-bottom: 2px solid #93a1b4;
+  border-bottom: 2px solid #ff7e00;
 }
 
 .header {
@@ -1076,11 +1082,11 @@ body {
 }
 
 .top__menu__list__item {
-  background-color: #f7f7f7;
+  background-color: #ffe26c;
   transition: background-color 500ms ease-out;
 }
 .top__menu__list__item:hover {
-  background-color: #93a1b4;
+  background-color: #ff7e00;
   transition: background-color 500ms ease-out;
 }
 
@@ -1089,11 +1095,11 @@ body {
 }
 
 .top__menu__underlist__item {
-  background-color: #93a1b4;
+  background-color: #ff7e00;
   transition: background-color 500ms ease-out;
 }
 .top__menu__underlist__item:hover {
-  background-color: #75879f;
+  background-color: #cc6500;
   transition: background-color 500ms ease-out;
 }
 
@@ -1108,27 +1114,27 @@ body {
 }
 
 .left-column {
-  background-color: rgba(147, 161, 180, 0.8);
+  background-color: rgba(255, 126, 0, 0.8);
   color: #f7f7f7;
 }
 
 .search__input {
-  border: 1px solid #75879f;
+  border: 1px solid #cc6500;
   border-radius: 5px;
   padding: 0.25em 0.5em;
 }
 
 .submit__input {
-  border: 1px solid #5c6d85;
+  border: 1px solid #994c00;
   border-radius: 5px;
   padding: 0.4em 0.5em;
-  background-color: #75879f;
+  background-color: #cc6500;
   color: #f7f7f7;
   transition: background-color 500ms ease;
   transition: box-shadow 200ms ease;
 }
 .submit__input:hover {
-  background-color: #c0c8d3;
+  background-color: #ffa54d;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   transition: background-color 500ms ease;
   transition: box-shadow 200ms ease;
@@ -1156,19 +1162,19 @@ body {
   color: #f7f7f7;
 }
 .side__menu__list__link:hover {
-  background-color: rgba(103, 122, 148, 0.8);
+  background-color: rgba(179, 88, 0, 0.8);
 }
 
 .side__menu__underlist__link:hover {
-  background-color: rgba(82, 97, 118, 0.8);
+  background-color: rgba(128, 63, 0, 0.8);
 }
 
 .side__menu__list__link--second:hover {
-  background-color: rgba(61, 72, 88, 0.8);
+  background-color: rgba(77, 38, 0, 0.8);
 }
 
 .open {
-  background-color: rgba(103, 122, 148, 0.8);
+  background-color: rgba(179, 88, 0, 0.8);
 }
 
 .left-column .menu {
@@ -1182,11 +1188,21 @@ body {
   color: #f7f7f7;
 }
 .left-column .menu-item a:hover {
-  background-color: rgba(103, 122, 148, 0.8);
+  background-color: rgba(179, 88, 0, 0.8);
+}
+
+#menuBtn {
+  color: #f7f7f7;
+  background-color: #ff7e00;
+}
+
+.menu-icon__bar {
+  background-color: #f7f7f7;
+  border-radius: 5px;
 }
 
 .footer__wrapper {
-  background-color: #93a1b4;
+  background-color: #ff7e00;
   color: #f7f7f7;
 }
 
@@ -1209,7 +1225,7 @@ body {
 }
 
 .illu-contact .media__link {
-  color: #b1bbc9;
+  color: #ff9833;
 }
 
 .illu-common .illu-text {
@@ -1217,10 +1233,10 @@ body {
 }
 
 .content__link, .content-preview__list__link, .media__link {
-  color: #93a1b4;
+  color: #ff7e00;
 }
 .content__link:hover, .content-preview__list__link:hover, .media__link:hover {
-  color: #b1bbc9;
+  color: #ff9833;
 }
 
 .content__link {
@@ -1228,7 +1244,7 @@ body {
 }
 
 .content-preview {
-  border: 2px solid #93a1b4;
+  border: 2px solid #ff7e00;
   border-radius: 5px;
 }
 
@@ -1238,7 +1254,7 @@ body {
 }
 
 .media__link, .media__person__name {
-  color: #93a1b4;
+  color: #ff7e00;
 }
 
 .media__link {
@@ -1250,7 +1266,30 @@ body {
 }
 
 .media__text__important {
-  color: #93a1b4;
+  color: #ff7e00;
+}
+
+.button__link {
+  background-color: #ff7e00;
+  text-decoration: none;
+  color: #f7f7f7;
+  font-weight: bold;
+  border-radius: 0.5em;
+  border: 2px solid #ff7e00;
+  transition: color 500ms ease;
+  transition: background-color 500ms ease;
+  transition: border 500ms ease;
+  text-shadow: none;
+}
+
+.button__link:hover {
+  border: 2px solid #ff7e00;
+  background-color: #f7f7f7;
+  background-position: 0 -55px, 0 0;
+  color: #ff7e00;
+  transition: color 500ms ease;
+  transition: background-color 500ms ease;
+  transition: border 500ms ease;
 }
 
 /*------------TRUMPS-------------*/
