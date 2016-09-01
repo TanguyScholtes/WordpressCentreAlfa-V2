@@ -709,11 +709,20 @@ body {
   clear: both;
 }
 
-.main__wrapper {
-  padding-top: 3em;
-  position: relative;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 1399px) {
+  .main__wrapper {
+    padding-top: 0;
+    position: relative;
+  }
 }
-
+/* Tablets, desktops and laptops ----------- */
+@media only screen and (min-width: 1400px) {
+  .main__wrapper {
+    padding-top: 3em;
+    position: relative;
+  }
+}
 .title {
   font-size: 1.15em;
 }
@@ -983,30 +992,73 @@ body {
   font-size: 0.75em;
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 1399px) {
+  .main__page__title {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+
+  .illu__text-title, .illu .media, .illu__text {
+    width: 80%;
+    text-align: center;
+    margin: 1em auto;
+  }
+
+  .main__content {
+    width: 80%;
+    min-height: 12em;
+    padding: 0;
+    margin: 1em auto;
+  }
+}
+/* Tablets, desktops and laptops ----------- */
+@media only screen and (min-width: 1400px) {
+  .main__page__title {
+    margin: 0 0 3em 0;
+  }
+
+  .illu__text-title, .illu .media, .illu__text {
+    width: 70%;
+  }
+
+  .illu .media {
+    top: 8em;
+    margin: 0 5em 0 auto;
+  }
+
+  .illu__text {
+    top: 2em;
+    margin: 0 2em 0 auto;
+  }
+
+  .illu__text-title {
+    top: 5em;
+    margin: 0 5em 0 auto;
+  }
+
+  .main__content {
+    width: 70%;
+    min-height: 12em;
+    padding: 1em;
+    margin: 0 4em 0 auto;
+  }
+}
 .main__page__title {
   font-size: 2.5em;
-  margin: 0 0 3em 0;
 }
 
 .illu {
   width: 100%;
   height: 30em;
   position: relative;
+  padding-top: 2em;
 }
 
 .illu__text-title, .illu .media, .illu__text {
   position: relative;
   width: 70%;
-}
-
-.illu .media {
-  top: 8em;
-  margin: 0 5em 0 auto;
-}
-
-.illu__text {
-  top: 2em;
-  margin: 0 2em 0 auto;
 }
 
 .illu-common {
@@ -1017,21 +1069,8 @@ body {
   font-size: 2em;
 }
 
-.illu__text-title {
-  font-size: 1.25em;
-  top: 5em;
-  margin: 0 5em 0 auto;
-}
-
-.illu__text-contact {
+.illu__text-title, .illu__text-contact {
   font-size: 1.15em;
-}
-
-.main__content {
-  width: 70%;
-  min-height: 12em;
-  padding: 1em;
-  margin: 0 4em 0 auto;
 }
 
 .news {

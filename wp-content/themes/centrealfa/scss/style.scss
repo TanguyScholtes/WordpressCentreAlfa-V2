@@ -59,9 +59,20 @@ body {
     clear: both;
 }
 
-.main__wrapper{
-    padding-top: 3em;
-    position: relative;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 1399px) {
+    .main__wrapper{
+        padding-top: 0;
+        position: relative;
+    }
+}
+
+/* Tablets, desktops and laptops ----------- */
+@media only screen and (min-width : 1400px) {
+    .main__wrapper{
+        padding-top: 3em;
+        position: relative;
+    }
 }
 
 .title{
