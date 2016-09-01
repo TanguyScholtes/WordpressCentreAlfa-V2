@@ -1,21 +1,32 @@
-.left-column{
-    .menu{
-        display: block;
-        position: relative;
-        padding: 0;
-        margin-top: 0;
-        font-size: 1em;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 1399px) {
+    .sidebar{
+        display: none !important;
     }
+}
 
-    .menu-item{
-        padding: 0;
-        display: block;
-        position: relative;
+/* Tablets, desktops and laptops ----------- */
+@media only screen and (min-width : 1400px) {
 
-        a{
+    .left-column{
+        .menu{
             display: block;
             position: relative;
-            padding: 0.5em 0;
+            padding: 0;
+            margin-top: 0;
+            font-size: 1em;
+        }
+
+        .menu-item{
+            padding: 0;
+            display: block;
+            position: relative;
+
+            a{
+                display: block;
+                position: relative;
+                padding: 0.5em 0;
+            }
         }
     }
 }

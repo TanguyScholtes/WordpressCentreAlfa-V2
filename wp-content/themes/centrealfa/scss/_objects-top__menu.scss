@@ -1,18 +1,86 @@
-.header__wrapper{
-    height: 3em;
-    position: fixed;
-    z-index: 30;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 1399px) {
+    .header__wrapper{
+        position: relative;
+    }
+
+    .header{
+        width: 100%;
+        margin: 0 auto;
+        padding: 1em 0;
+    }
+
+    .site__header{
+        display: block;
+        width: 80%;
+        margin: 1em auto;
+        text-align: center;
+    }
+
+    .top__menu__list{
+    	position: relative;
+        display: block;
+    }
+
+    .top__menu__list__item{
+    	display: block;
+        float: none;
+        width: 80%;
+        margin: 1em auto;
+    }
+
+    .top__menu__list a{
+        font-size: 1.15em;
+    	display: block;
+    	padding: 0.6em 0;
+        text-align: center;
+    }
 }
 
-.header{
-    width: 96%;
-    margin: 0 auto;
+/* Tablets, desktops and laptops ----------- */
+@media only screen and (min-width : 1400px) {
+    .header__wrapper{
+        height: 3em;
+        position: fixed;
+        z-index: 30;
+    }
+
+    .header{
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .site__header{
+        display: inline-block;
+    }
+
+    .top__menu__list{
+    	position: absolute;
+    	right: 2%;
+    	top: 0;
+        display: inline-table;
+    }
+
+    .top__menu__list__item{
+    	display: inline-block;
+        float: left;
+    }
+
+    .top__menu__list a{
+        font-size: 1.15em;
+    	display: inline-block;
+    	padding: 0.6em 0.75em;
+
+        &:hover{
+            z-index: 99;
+        }
+    }
 }
 
 .site__header{
     margin: 0;
-    display: inline-block;
 }
+
 
 .site__logo{
     width: 2em;
@@ -31,33 +99,14 @@
 }
 
 .top__menu__list{
-	position: absolute;
-	right: 2%;
-	top: 0;
 	margin: 0 1em 0 0;
 	padding: 0;
-    display: inline-table;
 }
 
 .top__menu__list:after{
     content: "";
     display: block;
     clear: both;
-}
-
-.top__menu__list a{
-    font-size: 1.15em;
-	display: inline-block;
-	padding: 0.6em 0.75em;
-    
-    &:hover{
-        z-index: 99;
-    }
-}
-
-.top__menu__list__item{
-	display: inline-block;
-    float: left;
 }
 
 .top__menu__underlist{
@@ -84,7 +133,7 @@
 
 .top__menu__underlist a{
     padding: 0.6em 0.75em;
-    
+
     &:hover{
         z-index: 99;
     }
