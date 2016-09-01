@@ -13,16 +13,16 @@
         <link rel="shortcut icon" type="image/png" href="<?php bloginfo('template_url'); ?>/img/favicon.png" />
         <title><?php wp_title(' - ', true, right); ?><?php bloginfo("title"); ?></title>
         <meta name="description" content="<?php bloginfo('description'); ?>">
-        
+
         <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
-        
-        <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>?1">
+
+        <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+
         <div class="wrapper header__wrapper">
             <header class="header">
                 <p class="title site__header">
@@ -41,5 +41,5 @@
         </div><!-- .wrapper .header__wrapper -->
 
         <div class="wrapper main__wrapper">
-            
+
     <?php get_sidebar(); ?>
