@@ -9,6 +9,7 @@
         a{
             text-decoration: none;
             color: $txtWhite;
+            padding-left: 1em;
 
             &:hover{
                 background-color: darken($logoColorTransp, 15%);

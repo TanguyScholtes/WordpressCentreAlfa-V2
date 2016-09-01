@@ -1186,6 +1186,7 @@ body {
 .left-column .menu-item a {
   text-decoration: none;
   color: #f7f7f7;
+  padding-left: 1em;
 }
 .left-column .menu-item a:hover {
   background-color: rgba(179, 88, 0, 0.8);
